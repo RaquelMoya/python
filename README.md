@@ -10,3 +10,7 @@
 
 ----------------------------------------------------------------------
 # python enunciado 4 ![image](https://user-images.githubusercontent.com/91592928/183401061-390a4b9a-d494-4293-abc5-736082f137e6.png)
+
+----------------------------------------------------------------------
+# python enunciado 5 ![image](https://user-images.githubusercontent.com/91592928/183417559-c9eddd6f-d1b6-4258-8bec-2719adc8b8c4.png)
+
