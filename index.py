@@ -1,9 +1,16 @@
-print("Hola, soy Raquel")
-print("Estoy empezando el curso de python")
-print("Espero aprender mucho")
+#print("Hola, soy Raquel")
+#print("Estoy empezando el curso de python")
+#print("Espero aprender mucho")
 
-hola = "Hola Mundo"
+#hola = "Hola Mundo"
 
-print(hola)
+#print(hola)
 
-print(type(hola))
+#print(type(hola))
+edad = int(input('Dime tu edad: '))
+print(edad)
+
+if edad > 18:
+    print('Eres mayor de edad')
+else:
+    print('No eres mayor de edad')
