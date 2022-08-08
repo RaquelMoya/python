@@ -7,5 +7,3 @@ hola = "Hola Mundo"
 print(hola)
 
 print(type(hola))
-
-
