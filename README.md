@@ -7,3 +7,6 @@
 ----------------------------------------------------------------------
 # python enunciado 3 ![image](https://user-images.githubusercontent.com/91592928/183397395-7804bfa8-2b04-466c-ab57-ed84c00ca64b.png)
 ![image](https://user-images.githubusercontent.com/91592928/183397884-f195a9fe-0654-45a7-b244-c3b876d4081c.png)
+
+----------------------------------------------------------------------
+# python enunciado 4 ![image](https://user-images.githubusercontent.com/91592928/183401061-390a4b9a-d494-4293-abc5-736082f137e6.png)
