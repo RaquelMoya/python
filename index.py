@@ -21,12 +21,18 @@
 
 
 
-numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+#numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+#
+#impares = []
+#
+#for num in numeros:
+#    if num %2 == 1:
+#        impares.append(num)
+#       
+#print(impares)
 
-impares = []
 
-for num in numeros:
-    if num %2 == 1:
-        impares.append(num)
-       
-print(impares)
+
+rango = list(range(1, 101))
+print(rango)
+print(list(reversed(rango)))
