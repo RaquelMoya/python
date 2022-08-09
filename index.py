@@ -86,18 +86,29 @@
 #peugeot = Coche()
 #print(peugeot.color, peugeot.ruedas, peugeot.puertas, peugeot.velocidad, peugeot.cilindrada)
 
+#
+#class Alumno:
+#    nombre = 'Pedro'
+#    nota = 5
+#
+#    def imprimir(self):
+#        print(self.nombre)
+#        print(self.nota)
+#    
+#    def aprobado(self):
+#        if self.nota >= 5: print('Está aprobado')
+#        else: print('está suspendido')
+#pedro = Alumno()
+#pedro.imprimir()
+#pedro.aprobado()
+#
 
-class Alumno:
-    nombre = 'Pedro'
-    nota = 5
+from operaciones import maths
 
-    def imprimir(self):
-        print(self.nombre)
-        print(self.nota)
-    
-    def aprobado(self):
-        if self.nota >= 5: print('Está aprobado')
-        else: print('está suspendido')
-pedro = Alumno()
-pedro.imprimir()
-pedro.aprobado()
+print(maths.sumar(2, 2))
+
+print(maths.restar(2, 2))
+
+print(maths.multi(2, 2))
+
+print(maths.divi(2, 2))
