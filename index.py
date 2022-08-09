@@ -41,33 +41,47 @@
 
 
 
-from cmath import pi
+#from cmath import pi
+#
+#
+#def triangulo (base, altura):
+#    area = (base*altura)/2
+#    return area
+#
+#def circulo (radio):
+#    area = pi*radio**2
+#    return area
+#
+#print(triangulo(1,2))
+#print(circulo(2))
+#
+#def es_primo(num):
+#    for n in range(2, num):
+#        if num % n == 0:
+#            print("No es primo", n, "es divisor")
+#            return False
+#    print("Es primo")
+#    return True
+#
+#es_primo(13)
+#es_primo(4)
+#
+#def es_bisiesto(anio: int) -> bool:
+#    return anio % 4 == 0 and (anio % 100 != 0 or anio % 400 == 0)
+#
+#print(es_bisiesto(2000))
+#print(es_bisiesto(2001))
 
 
-def triangulo (base, altura):
-    area = (base*altura)/2
-    return area
 
-def circulo (radio):
-    area = pi*radio**2
-    return area
+class Vehiculo:
+    color = 'blanco'
+    ruedas = 4
+    puertas = 4
 
-print(triangulo(1,2))
-print(circulo(2))
+class Coche(Vehiculo):
+    velocidad = '100km/h'
+    cilindrada = '120cv'
 
-def es_primo(num):
-    for n in range(2, num):
-        if num % n == 0:
-            print("No es primo", n, "es divisor")
-            return False
-    print("Es primo")
-    return True
-
-es_primo(13)
-es_primo(4)
-
-def es_bisiesto(anio: int) -> bool:
-    return anio % 4 == 0 and (anio % 100 != 0 or anio % 400 == 0)
-
-print(es_bisiesto(2000))
-print(es_bisiesto(2001))
+peugeot = Coche()
+print(peugeot.color, peugeot.ruedas, peugeot.puertas, peugeot.velocidad, peugeot.cilindrada)
