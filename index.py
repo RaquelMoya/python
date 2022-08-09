@@ -33,6 +33,24 @@
 
 
 
-rango = list(range(1, 101))
-print(rango)
-print(list(reversed(rango)))
+#rango = list(range(1, 101))
+#print(rango)
+#print(list(reversed(rango)))
+
+
+
+
+
+from cmath import pi
+
+
+def triangulo (base, altura):
+    area = (base*altura)/2
+    return area
+
+def circulo (radio):
+    area = pi*radio**2
+    return area
+
+print(triangulo(1,2))
+print(circulo(2))
