@@ -74,14 +74,30 @@
 
 
 
-class Vehiculo:
-    color = 'blanco'
-    ruedas = 4
-    puertas = 4
+#class Vehiculo:
+#    color = 'blanco'
+#    ruedas = 4
+#    puertas = 4
+#
+#class Coche(Vehiculo):
+#    velocidad = '100km/h'
+#    cilindrada = '120cv'
+#
+#peugeot = Coche()
+#print(peugeot.color, peugeot.ruedas, peugeot.puertas, peugeot.velocidad, peugeot.cilindrada)
 
-class Coche(Vehiculo):
-    velocidad = '100km/h'
-    cilindrada = '120cv'
 
-peugeot = Coche()
-print(peugeot.color, peugeot.ruedas, peugeot.puertas, peugeot.velocidad, peugeot.cilindrada)
+class Alumno:
+    nombre = 'Pedro'
+    nota = 5
+
+    def imprimir(self):
+        print(self.nombre)
+        print(self.nota)
+    
+    def aprobado(self):
+        if self.nota >= 5: print('Está aprobado')
+        else: print('está suspendido')
+pedro = Alumno()
+pedro.imprimir()
+pedro.aprobado()
