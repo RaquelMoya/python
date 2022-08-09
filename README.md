@@ -17,5 +17,6 @@
 ----------------------------------------------------------------------
 # python enunciado 6 ![image](https://user-images.githubusercontent.com/91592928/183578608-3e5e225a-c0b2-433d-ad97-cc12106ac153.png)
 ![image](https://user-images.githubusercontent.com/91592928/183598719-3c68e095-a34a-4dae-bc2f-6d556bf1a9e1.png)
+![image](https://user-images.githubusercontent.com/91592928/183599951-83594b2d-f6e3-4cca-970f-90ebd7130e53.png)
 
 
