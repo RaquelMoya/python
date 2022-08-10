@@ -119,24 +119,33 @@
 #file = open('../py/filename.txt', 'r')
 #datos = file.read()
 #print(datos)
-import pickle
+#import pickle
+#
+#class Vehiculo:
+#    color = 'rojo'
+#    vel = 100
+#    def __init__(self, color, vel):
+#        self.color = color
+#        self.vel = vel
+#    def getColor(self):
+#        return self.color 
+#
+#f = open('datos.bin', 'rb')
+#coche = pickle.load(f)
+#f.close()
+#
+#print(type(coche))
+#print(coche.getColor())
 
-class Vehiculo:
-    color = 'rojo'
-    vel = 100
-    def __init__(self, color, vel):
-        self.color = color
-        self.vel = vel
-    def getColor(self):
-        return self.color 
 
-f = open('datos.bin', 'rb')
-coche = pickle.load(f)
-f.close()
 
-print(type(coche))
-print(coche.getColor())
-
+paises= []
+for i in range(5):
+    paises.append(input('Introduce un pais: '))
+paises = set(paises)
+l = list(paises)
+l.sort()
+print(f'Los paises son {l}')
 
 
 
