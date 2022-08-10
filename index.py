@@ -103,12 +103,19 @@
 #pedro.aprobado()
 #
 
-from operaciones import maths
+#from operaciones import maths
+#
+#print(maths.sumar(2, 2))
+#
+#print(maths.restar(2, 2))
+#
+#print(maths.multi(2, 2))
+#
+#print(maths.divi(2, 2))
 
-print(maths.sumar(2, 2))
+file = open('../py/filename.txt', 'w')
+file.write('Primera línea \n')
 
-print(maths.restar(2, 2))
-
-print(maths.multi(2, 2))
-
-print(maths.divi(2, 2))
+file = open('../py/filename.txt', 'r')
+datos = file.read()
+print(datos)
