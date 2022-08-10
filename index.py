@@ -139,13 +139,25 @@
 
 
 
-paises= []
-for i in range(5):
-    paises.append(input('Introduce un pais: '))
-paises = set(paises)
-l = list(paises)
-l.sort()
-print(f'Los paises son {l}')
+#paises= []
+#for i in range(5):
+#    paises.append(input('Introduce un pais: '))
+#paises = set(paises)
+#l = list(paises)
+#l.sort()
+#print(f'Los paises son {l}')
 
 
+from functools import reduce
+lista = [3, 1, 4, 7, 2, 8, 9, 11, 10]
+filtrada = []
 
+for elemento in lista:
+    if elemento % 2:
+        filtrada.append(elemento)
+
+print(filtrada)
+
+def add(x, y):
+    return x + y
+print(reduce(add, filtrada))
