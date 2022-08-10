@@ -113,9 +113,31 @@
 #
 #print(maths.divi(2, 2))
 
-file = open('../py/filename.txt', 'w')
-file.write('Primera línea \n')
+#file = open('../py/filename.txt', 'w')
+#file.write('Primera línea \n')
+#
+#file = open('../py/filename.txt', 'r')
+#datos = file.read()
+#print(datos)
+import pickle
 
-file = open('../py/filename.txt', 'r')
-datos = file.read()
-print(datos)
+class Vehiculo:
+    color = 'rojo'
+    vel = 100
+    def __init__(self, color, vel):
+        self.color = color
+        self.vel = vel
+    def getColor(self):
+        return self.color 
+
+coche = Vehiculo('azul', 90)
+
+f = open('datos.bit', 'wb')
+
+pickle.dump(coche, f)
+f.close()
+
+
+
+
+
