@@ -27,5 +27,7 @@
 # python enunciado 9 ![image](https://user-images.githubusercontent.com/91592928/183633391-2f5b24e4-7d3e-4dbb-99e2-40df7289438f.png)
 ![image](https://user-images.githubusercontent.com/91592928/183633457-760f59ad-292a-4166-b05d-4d38367e826e.png)
 ![image](https://user-images.githubusercontent.com/91592928/183638425-e1fcb00b-7b29-41cc-b723-693fb061351f.png)
+----------------------------------------------------------------------
+# python enunciado 10 ![image](https://user-images.githubusercontent.com/91592928/183873992-c979b092-a4cc-4495-900a-395ba786bd4f.png)
 
 
