@@ -30,5 +30,6 @@
 ----------------------------------------------------------------------
 # python enunciado 10 ![image](https://user-images.githubusercontent.com/91592928/183873992-c979b092-a4cc-4495-900a-395ba786bd4f.png)
 ![image](https://user-images.githubusercontent.com/91592928/183876515-c1b643a8-1e23-4c62-a1d9-c30d9442bab8.png)
+![image](https://user-images.githubusercontent.com/91592928/183877099-0ba27c02-7593-41d9-9904-80a264f18bfb.png)
 
 
