@@ -130,13 +130,12 @@ class Vehiculo:
     def getColor(self):
         return self.color 
 
-coche = Vehiculo('azul', 90)
-
-f = open('datos.bit', 'wb')
-
-pickle.dump(coche, f)
+f = open('datos.bin', 'rb')
+coche = pickle.load(f)
 f.close()
 
+print(type(coche))
+print(coche.getColor())
 
 
 
