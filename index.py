@@ -192,21 +192,40 @@
 #
 #window.mainloop()
 
-import sys
-import tkinter
-from tkinter import ttk
+#import sys
+#import tkinter
+#from tkinter import ttk
+#
+#
+#window = tkinter.Tk()
+#
+#window.columnconfigure(0,weight=1)
+#window.columnconfigure(0,weight=4)
+#label = tkinter.Label(window, text='Lista', bg='blue', fg='black')
+#label.grid(column=0, row=0, sticky=tkinter.W)
+#lista = ['Windows', 'macOS', 'Linux', 'MS DOS', 'BeOS']
+#lista_items = tkinter.StringVar(value=lista)
+#listbox = tkinter.Listbox(window, height=20, listvariable=lista_items)
+#listbox.grid(column=0, row=2, sticky=tkinter.W)
+#
+#window.mainloop()
+#sys.exit()
 
+import sqlite3
 
-window = tkinter.Tk()
+conn = sqlite3.connect('ficher.db')
 
-window.columnconfigure(0,weight=1)
-window.columnconfigure(0,weight=4)
-label = tkinter.Label(window, text='Lista', bg='blue', fg='black')
-label.grid(column=0, row=0, sticky=tkinter.W)
-lista = ['Windows', 'macOS', 'Linux', 'MS DOS', 'BeOS']
-lista_items = tkinter.StringVar(value=lista)
-listbox = tkinter.Listbox(window, height=20, listvariable=lista_items)
-listbox.grid(column=0, row=2, sticky=tkinter.W)
+cursor = conn.cursor()
 
-window.mainloop()
-sys.exit()
+nombre=input('Escribe el nombre del alumno: ')
+query = f"SELECT * FROM Alumnos WHERE nombre='{nombre}'"
+print("Query a ejecutar: ", query)
+
+rows = cursor.execute(query)
+
+data = rows.fetchone()
+print('data es ', type(data))
+print(data)
+
+cursor.close()
+conn.close()
