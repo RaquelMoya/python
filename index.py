@@ -163,31 +163,50 @@
 #print(reduce(add, filtrada))
 
 
-import tkinter
-from tkinter import RIGHT, ttk
+#import tkinter
+#from tkinter import RIGHT, ttk
+#import sys
+#from turtle import right
+#
+#window = tkinter.Tk()
+#
+#window.columnconfigure(0,weight=1)
+#window.columnconfigure(0,weight=4)
+#
+#selected = tkinter.StringVar()
+#
+#r1 = ttk.Radiobutton(window, text='Si', value='1', variable=selected)
+#r2 = ttk.Radiobutton(window, text='No', value='2', variable=selected)
+#r3 = ttk.Radiobutton(window, text='Quizá', value='3', variable=selected)
+#
+#r1.grid(column=0, row=1, pady=5, padx=5)
+#r2.grid(column=0, row=2, pady=5, padx=5)
+#r3.grid(column=0, row=3, pady=5, padx=5)
+#
+#def reiniciar(event):
+#    selected.set(None)
+#
+#botonReinicio= tkinter.Button(window, text='Reinicio', command=reiniciar)
+#botonReinicio.grid(column=0, row=4, pady=5, padx=5)
+#botonReinicio.bind('<Button-1>', reiniciar)
+#
+#window.mainloop()
+
 import sys
-from turtle import right
+import tkinter
+from tkinter import ttk
+
 
 window = tkinter.Tk()
 
 window.columnconfigure(0,weight=1)
 window.columnconfigure(0,weight=4)
-
-selected = tkinter.StringVar()
-
-r1 = ttk.Radiobutton(window, text='Si', value='1', variable=selected)
-r2 = ttk.Radiobutton(window, text='No', value='2', variable=selected)
-r3 = ttk.Radiobutton(window, text='Quizá', value='3', variable=selected)
-
-r1.grid(column=0, row=1, pady=5, padx=5)
-r2.grid(column=0, row=2, pady=5, padx=5)
-r3.grid(column=0, row=3, pady=5, padx=5)
-
-def reiniciar(event):
-    selected.set(None)
-
-botonReinicio= tkinter.Button(window, text='Reinicio', command=reiniciar)
-botonReinicio.grid(column=0, row=4, pady=5, padx=5)
-botonReinicio.bind('<Button-1>', reiniciar)
+label = tkinter.Label(window, text='Lista', bg='blue', fg='black')
+label.grid(column=0, row=0, sticky=tkinter.W)
+lista = ['Windows', 'macOS', 'Linux', 'MS DOS', 'BeOS']
+lista_items = tkinter.StringVar(value=lista)
+listbox = tkinter.Listbox(window, height=20, listvariable=lista_items)
+listbox.grid(column=0, row=2, sticky=tkinter.W)
 
 window.mainloop()
+sys.exit()
