@@ -38,6 +38,10 @@
 # python enunciado 12
 ![image](https://user-images.githubusercontent.com/91592928/184111317-16b91750-f9a7-442f-8153-8e0b591268c3.png)
 ![image](https://user-images.githubusercontent.com/91592928/184113498-9267393d-0113-4d03-b5c1-c7e347bcc1a9.png)
+----------------------------------------------------------------------
+# python enunciado 13
+![image](https://user-images.githubusercontent.com/91592928/184138066-d73f701a-d116-4860-8974-95016696074f.png)
+![image](https://user-images.githubusercontent.com/91592928/184138168-8fac5d33-980d-4852-91a7-e90019a0cf92.png)
 
 
 
