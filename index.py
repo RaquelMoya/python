@@ -148,16 +148,46 @@
 #print(f'Los paises son {l}')
 
 
-from functools import reduce
-lista = [3, 1, 4, 7, 2, 8, 9, 11, 10]
-filtrada = []
+#from functools import reduce
+#lista = [3, 1, 4, 7, 2, 8, 9, 11, 10]
+#filtrada = []
+#
+#for elemento in lista:
+#    if elemento % 2:
+#        filtrada.append(elemento)
+#
+#print(filtrada)
+#
+#def add(x, y):
+#    return x + y
+#print(reduce(add, filtrada))
 
-for elemento in lista:
-    if elemento % 2:
-        filtrada.append(elemento)
 
-print(filtrada)
+import tkinter
+from tkinter import RIGHT, ttk
+import sys
+from turtle import right
 
-def add(x, y):
-    return x + y
-print(reduce(add, filtrada))
+window = tkinter.Tk()
+
+window.columnconfigure(0,weight=1)
+window.columnconfigure(0,weight=4)
+
+selected = tkinter.StringVar()
+
+r1 = ttk.Radiobutton(window, text='Si', value='1', variable=selected)
+r2 = ttk.Radiobutton(window, text='No', value='2', variable=selected)
+r3 = ttk.Radiobutton(window, text='Quizá', value='3', variable=selected)
+
+r1.grid(column=0, row=1, pady=5, padx=5)
+r2.grid(column=0, row=2, pady=5, padx=5)
+r3.grid(column=0, row=3, pady=5, padx=5)
+
+def reiniciar(event):
+    selected.set(None)
+
+botonReinicio= tkinter.Button(window, text='Reinicio', command=reiniciar)
+botonReinicio.grid(column=0, row=4, pady=5, padx=5)
+botonReinicio.bind('<Button-1>', reiniciar)
+
+window.mainloop()
