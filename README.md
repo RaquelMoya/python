@@ -37,5 +37,7 @@
 ----------------------------------------------------------------------
 # python enunciado 12
 ![image](https://user-images.githubusercontent.com/91592928/184111317-16b91750-f9a7-442f-8153-8e0b591268c3.png)
+![image](https://user-images.githubusercontent.com/91592928/184113498-9267393d-0113-4d03-b5c1-c7e347bcc1a9.png)
+
 
 
