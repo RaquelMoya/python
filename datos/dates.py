@@ -1,3 +1,4 @@
+#EJERCICIO 2. Lección 7
 #from datetime import datetime
 #
 #def hora():

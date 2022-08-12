@@ -1,16 +1,20 @@
-#print("Hola, soy Raquel")
+#EJERCICIO 1. Lección 1
+# print("Hola, soy Raquel")
 #print("Estoy empezando el curso de python")
 #print("Espero aprender mucho")
 
-#hola = "Hola Mundo"
+#EJERCICIO 2. Lección 1
+# hola = "Hola Mundo"
 
-#print(hola)
+#EJERCICIO 1 y 2. Lección 2
+# print(hola)
 
 #print(type(hola))
 
 
 
 
+#EJERCICIO 1. Lección 4
 #edad = int(input('Dime tu edad: '))
 #print(edad)
 #
@@ -21,7 +25,8 @@
 
 
 
-#numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+#EJERCICIO 2.Lección 4
+# numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 #
 #impares = []
 #
@@ -33,6 +38,7 @@
 
 
 
+#EJERCICIO 3. Lección 4
 #rango = list(range(1, 101))
 #print(rango)
 #print(list(reversed(rango)))
@@ -41,6 +47,7 @@
 
 
 
+#EJERCICIO 1. Lección 5
 #from cmath import pi
 #
 #
@@ -54,7 +61,9 @@
 #
 #print(triangulo(1,2))
 #print(circulo(2))
-#
+
+
+#EJERCICIO 2. Lección 5
 #def es_primo(num):
 #    for n in range(2, num):
 #        if num % n == 0:
@@ -65,7 +74,8 @@
 #
 #es_primo(13)
 #es_primo(4)
-#
+
+#EJERCICIO 3. Lección 5
 #def es_bisiesto(anio: int) -> bool:
 #    return anio % 4 == 0 and (anio % 100 != 0 or anio % 400 == 0)
 #
@@ -74,6 +84,7 @@
 
 
 
+#EJERCICIO 1. Lección 6
 #class Vehiculo:
 #    color = 'blanco'
 #    ruedas = 4
@@ -87,6 +98,7 @@
 #print(peugeot.color, peugeot.ruedas, peugeot.puertas, peugeot.velocidad, peugeot.cilindrada)
 
 #
+#EJERCICIO 2. Lección 6
 #class Alumno:
 #    nombre = 'Pedro'
 #    nota = 5
@@ -103,6 +115,7 @@
 #pedro.aprobado()
 #
 
+#EJERCICIO 1. Lección 7
 #from operaciones import maths
 #
 #print(maths.sumar(2, 2))
@@ -113,6 +126,7 @@
 #
 #print(maths.divi(2, 2))
 
+#EJERCICIO 1. Lección 8
 #file = open('../py/filename.txt', 'w')
 #file.write('Primera línea \n')
 #
@@ -120,7 +134,8 @@
 #datos = file.read()
 #print(datos)
 #import pickle
-#
+
+#EJERCICIO 2. Lección 8
 #class Vehiculo:
 #    color = 'rojo'
 #    vel = 100
@@ -139,6 +154,7 @@
 
 
 
+#EJERCICIO 1. Lección 9
 #paises= []
 #for i in range(5):
 #    paises.append(input('Introduce un pais: '))
@@ -148,6 +164,7 @@
 #print(f'Los paises son {l}')
 
 
+#EJERCICIO 2. Lección 9
 #from functools import reduce
 #lista = [3, 1, 4, 7, 2, 8, 9, 11, 10]
 #filtrada = []
@@ -163,6 +180,7 @@
 #print(reduce(add, filtrada))
 
 
+#EJERCICIO 1. Lección 10
 #import tkinter
 #from tkinter import RIGHT, ttk
 #import sys
@@ -192,6 +210,7 @@
 #
 #window.mainloop()
 
+#EJERCICIO 2. Lección 10
 #import sys
 #import tkinter
 #from tkinter import ttk
@@ -211,21 +230,23 @@
 #window.mainloop()
 #sys.exit()
 
-import sqlite3
+#EJERCICIO 1. Lección 11
+#import sqlite3
+#
+#conn = sqlite3.connect('ficher.db')
+#
+#cursor = conn.cursor()
+#
+#nombre=input('Escribe el nombre del alumno: ')
+#query = f"SELECT * FROM Alumnos WHERE nombre='{nombre}'"
+#print("Query a ejecutar: ", query)
+#
+#rows = cursor.execute(query)
+#
+#data = rows.fetchone()
+#print('data es ', type(data))
+#print(data)
+#
+#cursor.close()
+#conn.close()
 
-conn = sqlite3.connect('ficher.db')
-
-cursor = conn.cursor()
-
-nombre=input('Escribe el nombre del alumno: ')
-query = f"SELECT * FROM Alumnos WHERE nombre='{nombre}'"
-print("Query a ejecutar: ", query)
-
-rows = cursor.execute(query)
-
-data = rows.fetchone()
-print('data es ', type(data))
-print(data)
-
-cursor.close()
-conn.close()
